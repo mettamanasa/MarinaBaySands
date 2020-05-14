@@ -1,0 +1,43 @@
+<div class="container-fluid bg-img">
+    <div class="top-left">
+        <h2>ROOMS & SUITES</h2>
+        <img class="head-icon" src="/assets/Images/Icons/icon-tick-circle.svg">
+        <span>Lowest price guaranteed</span>
+        <img class="head-icon" src="/assets/Images/Icons/icon-tick-circle.svg">
+        <span>Free cancellation*</span>
+        <img class="head-icon" src="/assets/Images/Icons/icon-tick-circle.svg">
+        <span>Early access to Infinity Pool</span>
+    </div>
+    <div class="navbar-container">
+        <div class="topnav">
+            <a routerLink="/cart" routerLinkActive="active">ALL</a>
+            <a routerLink="/home" routerLinkActive="active">ROOMS</a>
+            <a routerLink="/room" routerLinkActive="active">SUITES</a>
+        </div>
+    </div>
+</div>
+<div class="container text-center">
+    <h3></h3><br>
+    <div class="row" *ngFor="let item of roomList">
+        <div class="col-sm-5 roomName " >
+            <h4>{{item.roomName}}</h4>
+            <p>{{item.roomDesc}}</p>
+            From {{item.roomPrice}}/nightss
+            <div *ngFor="let Amen of item.roomAmen">
+                <img src="{{Amen.amenIcons}}">
+                <span>{{Amen.amenDesc}}</span>
+            </div>
+            <!-- {{item.addonAmen}} -->
+            <a routerLink="/room" routerLinkActive="active">
+                <button class="btn" (click)="selectedRoom(item.roomId)">SEE DETAILS</button>
+            </a>
+        </div>
+        <div class="col-sm-7">
+            <img src="{{item.roomImag}}" class="img-fluid roomImg" alt="Image">
+        </div>
+    </div>
+</div><br>
+<!-- <div *ngFor="let room of roomDetailsList; let i = index"
+    class="roomImgItem {{room.split(' ').join('')}}">
+    <span class="roomImgName">{{room}}</span>
+</div> -->

@@ -1,0 +1,105 @@
+
+.bg-img {
+    background-image: url('src/assets/Images/Rooms/views/garden.jpg');
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.top-left {
+    position: absolute;
+    top: 40px;
+    left: 56px;
+}
+h2 {
+    font-weight: 700;  
+    color: #1c1c1c;
+    letter-spacing: .075rem;
+    font-size: 60px;
+    font-family: "Josefin Sans",sans-serif;
+    text-align: left;
+}
+.head-icon{
+    height: 30px;
+    margin: 15px;
+}
+.navbar-container {
+    position: absolute;
+    margin-top: 311px;
+    margin-left: 88px;
+    width: auto;
+    margin-left: 88px;
+    background-color: #333;
+    width: 93%;
+    display: block;
+    transition: top 0.3s;
+}
+.topnav {
+    overflow: hidden;
+    background-color:white;
+}
+.topnav a {
+    display: block;
+    float: left;
+    color:black;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    /* border-right: 1px solid grey; */
+}
+.topnav a:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+.roomName {
+    border-left: 3px solid #d0af6d; 
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn {
+    background-color: #e7c569;
+    min-width: 145px;
+    min-height: 50px;
+    color: #151515;
+}
+.roomImg {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    align-content: center;
+}
+.TheDeluxeRoom {
+    background: url('src/assets/Images/Rooms/Deluxe/Deluxe.jpg');
+}
+.ThePremierRoom {
+    background: url('src/assets/Images/Rooms/Premiere/premier.jpg');
+}
+.TheFamilyRoom {
+    background: url('src/assets/Images/Rooms/Family/family.jpg');
+}
+/* .roomImgItem {
+    width: 109%;
+    float: left; 
+    margin: 2%;
+    height: 400px;
+    margin: 33px;
+    text-align: center;
+    cursor: pointer;
+    background-size: auto 100%!important;
+    position: relative;
+}
+.roomImgName {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color:white;
+    padding: 10px 0;
+} */
